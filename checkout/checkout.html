@@ -1,48 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Character encoding and responsive layout -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Page title -->
   <title>Checkout</title>
+
+  <!-- Tailwind CSS compiled file -->
   <link rel="stylesheet" href="/src/output.css" />
 </head>
+
 <body>
+  <!-- Main container with responsive padding and background image -->
   <div class="container min-h-screen min-w-screen bg-[url('/images/image.png')] bg-center bg-cover px-6 md:px-28 py-5 relative">
-    <!-- Navigation -->
+    
+    <!-- Navigation bar -->
     <nav class="flex items-center">
-      <a href="/home.html"><img src="/images/logo.png" class="w-60 cursor-pointer" /></a>
+      
+      <!-- Logo linking to homepage -->
+      <a href="/home.html">
+        <img src="/images/logo.png" class="w-60 cursor-pointer" />
+      </a>
+
+      <!-- Navigation menu -->
       <ul class="flex-1 text-center">
-        <li class="list-none inline-block px-5 cursor-pointer"><a href="/home.html" class="px-2">Home</a></li>
-        <li class="list-none inline-block px-5 cursor-pointer"><a href="/about/about.html" class="px-2">About</a></li>
-        <li class="list-none inline-block px-5 cursor-pointer"><a href="/products/products.html" class="px-2">Products</a></li>
-        <li class="list-none inline-block px-5 cursor-pointer"><a href="/contact/contact.html" class="px-2">Contact</a></li>
+        <li class="list-none inline-block px-5 cursor-pointer">
+          <a href="/home.html" class="px-2">Home</a>
+        </li>
+        <li class="list-none inline-block px-5 cursor-pointer">
+          <a href="/about/about.html" class="px-2">About</a>
+        </li>
+        <li class="list-none inline-block px-5 cursor-pointer">
+          <a href="/products/products.html" class="px-2">Products</a>
+        </li>
+        <li class="list-none inline-block px-5 cursor-pointer">
+          <a href="/contact/contact.html" class="px-2">Contact</a>
+        </li>
       </ul>
+
+      <!-- Cart icon (visual indicator of shopping cart) -->
       <img src="/images/cart.png" alt="Cart" class="w-8 cursor-pointer" />
     </nav>
 
-    <!-- Main Content -->
+    <!-- Main checkout layout (responsive grid: 1 column on mobile, 2 on desktop) -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-20">
-      <!-- Cart Summary -->
+      
+      <!-- Cart Summary Section -->
       <div class="bg-white p-8 rounded-2xl shadow-lg">
-        <h2 class="text-2xl font-semibold mb-6 text-center text-black">Your Selected Products</h2>
+        
+        <!-- Section heading -->
+        <h2 class="text-2xl font-semibold mb-6 text-center text-black">
+          Your Selected Products
+        </h2>
+
+        <!-- Dynamic product list (populated via JavaScript) -->
         <ul id="productList" class="space-y-4"></ul>
+
+        <!-- Total price container (updated dynamically) -->
         <div id="totalContainer" class="mt-4 text-right text-lg font-semibold text-black"></div>
       </div>
 
-      <!-- Checkout Form -->
+      <!-- Checkout Form Section -->
       <div class="bg-white p-8 rounded-2xl shadow-lg">
-        <h2 class="text-2xl font-semibold mb-6 text-center text-black">Checkout</h2>
+        
+        <!-- Section heading -->
+        <h2 class="text-2xl font-semibold mb-6 text-center text-black">
+          Checkout
+        </h2>
+
+        <!-- User input form for order details -->
         <form id="checkoutForm" class="space-y-4 text-black">
-          <input type="text" placeholder="Full Name" required class="w-full border border-gray-300 p-3 rounded" />
-          <input type="email" placeholder="Email Address" required class="w-full border border-gray-300 p-3 rounded" />
-          <input type="text" placeholder="Shipping Address" required class="w-full border border-gray-300 p-3 rounded" />
-          <button type="submit" class="w-full bg-yellow-300 py-3 rounded-3xl font-medium hover:bg-yellow-400">Place Order</button>
+          
+          <!-- Full name input -->
+          <input 
+            type="text" 
+            placeholder="Full Name" 
+            required 
+            class="w-full border border-gray-300 p-3 rounded" 
+          />
+
+          <!-- Email input -->
+          <input 
+            type="email" 
+            placeholder="Email Address" 
+            required 
+            class="w-full border border-gray-300 p-3 rounded" 
+          />
+
+          <!-- Shipping address input -->
+          <input 
+            type="text" 
+            placeholder="Shipping Address" 
+            required 
+            class="w-full border border-gray-300 p-3 rounded" 
+          />
+
+          <!-- Submit button -->
+          <button 
+            type="submit" 
+            class="w-full bg-yellow-300 py-3 rounded-3xl font-medium hover:bg-yellow-400">
+            Place Order
+          </button>
         </form>
       </div>
     </div>
   </div>
 
-
+  <!-- External JavaScript file handling cart logic and form submission -->
   <script src="/checkout/checkout.js"></script>
 </body>
 </html>
