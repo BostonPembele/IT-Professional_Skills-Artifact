@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+    <div class="container min-h-screen min-w-screen bg-[url('/images/image.png')] bg-center bg-cover px-28 py-5 relative">
+        <nav class="flex items-center">
+            <a href="/home.html"><img src="/images/logo.png" class="w-60 cursor-pointer"></a>
+            <ul class="flex-1 text-center">
+                <li class="list-none inline-block px-5 cursor-pointer"><a href="/home.html" class="px-2">Home</a></li>
+                <li class="list-none inline-block px-5 cursor-pointer"><a href="/about/about.html" class="px-2">About</a></li>
+                <li class="list-none inline-block px-5 cursor-pointer"><a href="/products/products.html" class="px-2">Products</a></li>
+                <li class="list-none inline-block px-5 cursor-pointer"><a href="/contact/contact.html" class="px-2">Contact</a></li>
+            </ul>
+            <a href="/checkout/checkout.html"><img src="/images/cart.png" alt="" class="w-8 cursor-pointer"></a>
+        </nav>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-20">
+            <!-- Product 1 -->
+            <div class="bg-white p-5 rounded-2xl shadow-lg">
+                <img src="/products/Fruits pngs/apple.png" alt="Apples" class="w-full h-48 object-cover rounded-xl" />
+                <h3 class="text-xl font-semibold mt-4">Fresh Apples</h3>
+                <p class="text-gray-600 mt-2"> Fresh Apples - $3.99/kg</p>
+                <button class="mt-4 bg-yellow-300 py-2 px-5 rounded-3xl font-medium hover:bg-yellow-400 add-to-cart" data-name="Fresh Apples" data-price="3.99">Add to Cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white p-5 rounded-2xl shadow-lg">
+                <img src="/products/Fruits pngs/Organic-Milk.png" alt="Milk" class="w-full h-48 object-cover rounded-xl">
+                <h3 class="text-xl font-semibold mt-4">Organic Milk</h3>
+                <p class="text-gray-600 mt-2">Organic Milk - $2.49/bottle</p>
+                <button class="mt-4 bg-yellow-300 py-2 px-5 rounded-3xl font-medium hover:bg-yellow-400 add-to-cart" data-name="Organic Milk" data-price="2.49">Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white p-5 rounded-2xl shadow-lg">
+                <img src="/products/Fruits pngs/als.png" alt="Bananas" class="w-full h-48 object-cover rounded-xl">
+                <h3 class="text-xl font-semibold mt-4">Bananas</h3>
+                <p class="text-gray-600 mt-2">Bananas - $1.29/kg</p>
+                <button class="mt-4 bg-yellow-300 py-2 px-5 rounded-3xl font-medium hover:bg-yellow-400 add-to-cart" data-name="Bananas" data-price="1.29">Add to Cart</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-white p-5 rounded-2xl shadow-lg">
+                <img src="/products/Fruits pngs/orange.png" alt="Oranges" class="w-full h-48 object-cover rounded-xl">
+                <h3 class="text-xl font-semibold mt-4">Oranges</h3>
+                <p class="text-gray-600 mt-2">Oranges - $2.99 / kg</p>
+                <button class="mt-4 bg-yellow-300 py-2 px-5 rounded-3xl font-medium hover:bg-yellow-400 add-to-cart" data-name="Oranges" data-price="2.99">Add to Cart</button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="bg-white p-5 rounded-2xl shadow-lg">
+                <img src="/products/Fruits pngs/bread.png" alt="Bread" class="w-full h-48 object-cover rounded">
+                <h3 class="text-xl font-semibold mt-4">Whole Grain Bread</h3>
+                <p class="text-gray-600 mt-2">Whole Grain Bread - $1.99 / loaf</p>
+                <button class="mt-4 bg-yellow-300 py-2 px-5 rounded-3xl font-medium hover:bg-yellow-400 add-to-cart" data-name="Whole Grain Bread" data-price="1.99">Add to Cart</button>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="bg-white p-5 rounded-2xl shadow-lg">
+                <img src="/products/Fruits pngs/cheese.png" alt="Cheese" class="w-full h-48 object-cover rounded">
+                <h3 class="text-xl font-semibold mt-4">Cheddar Cheese</h3>
+                <p class="text-gray-600 mt-2">Cheddar Cheese - $4.99 / block</p>
+                <button class="mt-4 bg-yellow-300 py-2 px-5 rounded-3xl font-medium hover:bg-yellow-400 add-to-cart" data-name="Cheddar Cheese" data-price="4.99">Add to Cart</button>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="bg-white p-5 rounded-2xl shadow-lg">
+                <img src="/products/Fruits pngs/tomato.png" alt="Tomatoes" class="w-full h-48 object-cover rounded">
+                <h3 class="text-xl font-semibold mt-4">Tomatoes</h3>
+                <p class="text-gray-600 mt-2">Tomatoes - $1.49 / kg</p>
+                <button class="mt-4 bg-yellow-300 py-2 px-5 rounded-3xl font-medium hover:bg-yellow-400 add-to-cart" data-name="Tomatoes" data-price="1.49">Add to Cart</button>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="bg-white p-5 rounded-2xl shadow-lg">
+                <img src="/products/Fruits pngs/eggs.png" alt="Eggs" class="w-full h-48 object-cover rounded">
+                <h3 class="text-xl font-semibold mt-4">Free-Range Eggs</h3>
+                <p class="text-gray-600 mt-2">Free-Range Eggs - $3.49 / dozen</p>
+                <button class="mt-4 bg-yellow-300 py-2 px-5 rounded-3xl font-medium hover:bg-yellow-400 add-to-cart" data-name="Free-Range Eggs" data-price="3.49">Add to Cart</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const productName = button.getAttribute('data-name');
+                const productPrice = parseFloat(button.getAttribute('data-price'));
+
+                const existingProduct = cart.find(item => item.name === productName);
+                if (existingProduct) {
+                    existingProduct.quantity += 1;
+                } else {
+                    cart.push({ name: productName, price: productPrice, quantity: 1 });
+                }
+
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert(`${productName} has been added to your cart.`);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <title>Project</title>
+</head>
+<body>
+    <div class="container min-h-screen min-w-screen bg-[url('/images/Image.png')] bg-center bg-cover px-28 py-5 relative">
+        <nav class="flex items-center">
+            <a href="/home.html"><img src="/images/logo.png" class="w-80 cursor-pointer"></a>
+                <ul class="flex-1 text-center">
+                    <li class="list-none inline-block px-5 cursor-pointer"><a href="home.html" class="px-2">Home</a></li>
+                    <li class="list-none inline-block px-5 cursor-pointer"><a href="/about/about.html" class="px-2">About</a></li>
+                    <li class="list-none inline-block px-5 cursor-pointer"><a href="/products/products.html" class="px-2">Products</a></li>
+                    <li class="list-none inline-block px-5 cursor-pointer"><a href="/contact/contact.html" class="px-2">Contact</a></li>
+                </ul>
+            <a href="/checkout/checkout.html"><img src="/images/cart.png" alt="" class="w-8 cursor-pointer"></a>
+        </nav>
+
+        <div class="mt-48 max-w-lg">
+            <h1 class="text-6xl leading-normal ">Groceries <br> delivery in <span class="font-light">15mins</span></h1>
+            <p>Grocify offer a wide range of products, including fresh products, meats, dairy, baked goods and non-perishable items.</p>
+        
+            <div class="mt-10">
+                <a href="/products/products.html" class="bg-yellow-300 rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-yellow-300 hover:text-white duration-300 hover:border border-transparent">Order Now</a>
+                <a href="https://play.google.com/store/apps/details?id=com.moodle.moodlemobile&hl=en_IE" class="bg-yellow-300 rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-yellow-300 hover:text-white duration-300 hover:border border-transparent" >Download App <span class="text-lg inline-block rotate-90">&#10148</span></a>
+            </div>
+        
+        </div>
+
+        <img src="/products/Fruits pngs/176efdfedbc69b5716c3fb290ba4890d.png" class="w-20 xl:w-1/2 xl:absolute bottom-0 right-0">
+    </div>
+</body>
+</html>
+
+<!-- 
+Command to watch and compile Tailwind CSS:
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+-->
