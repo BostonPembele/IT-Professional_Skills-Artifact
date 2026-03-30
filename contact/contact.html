@@ -1,42 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character encoding and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title (NOTE: could be updated to "Contact Us" for accuracy) -->
     <title>Checkout</title>
+
+    <!-- Tailwind CSS compiled stylesheet -->
     <link rel="stylesheet" href="/src/output.css">
 </head>
-<body>
-    <div class="container min-h-screen min-w-screen bg-[url('/images/image.png')] bg-center bg-cover px-28 py-5 relative">
-        <nav class="flex items-center">
-            <a href="/home.html"><img src="/images/logo.png" class="w-60 cursor-pointer"></a>
-            <ul class="flex-1 text-center">
-                <li class="list-none inline-block px-5 cursor-pointer"><a href="/home.html" class="px-2">Home</a></li>
-                <li class="list-none inline-block px-5 cursor-pointer"><a href="/about/about.html" class="px-2">About</a></li>
-                <li class="list-none inline-block px-5 cursor-pointer"><a href="/products/products.html" class="px-2">Products</a></li>
-                <li class="list-none inline-block px-5 cursor-pointer"><a href="/contact/contact.html" class="px-2">Contact</a></li>
-            </ul>
-            <a href="/checkout/checkout.html"><img src="/images/cart.png" alt="" class="w-8 cursor-pointer"></a>
-        </nav>
-<br>
-<div class="max-w-lg mx-auto bg-white p-8 rounded shadow-md text-black">
-    <h2 class="text-2xl font-bold mb-4 text-center">Contact Us</h2>
-    <form action="/submit-form" method="POST" class="space-y-4">
-        <div>
-            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-            <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-        </div>
-        <div>
-            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-            <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-        </div>
-        <div>
-            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-            <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
-        </div>
-        <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Send Message</button>
-    </form>
-</div>
 
+<body>
+    <!-- Main container with background image and spacing -->
+    <div class="container min-h-screen min-w-screen bg-[url('/images/image.png')] bg-center bg-cover px-28 py-5 relative">
+        
+        <!-- Navigation bar -->
+        <nav class="flex items-center">
+            
+            <!-- Logo linking to homepage -->
+            <a href="/home.html">
+                <img src="/images/logo.png" class="w-60 cursor-pointer">
+            </a>
+
+            <!-- Navigation links -->
+            <ul class="flex-1 text-center">
+                <li class="list-none inline-block px-5 cursor-pointer">
+                    <a href="/home.html" class="px-2">Home</a>
+                </li>
+                <li class="list-none inline-block px-5 cursor-pointer">
+                    <a href="/about/about.html" class="px-2">About</a>
+                </li>
+                <li class="list-none inline-block px-5 cursor-pointer">
+                    <a href="/products/products.html" class="px-2">Products</a>
+                </li>
+                <li class="list-none inline-block px-5 cursor-pointer">
+                    <a href="/contact/contact.html" class="px-2">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Cart icon linking to checkout page -->
+            <a href="/checkout/checkout.html">
+                <img src="/images/cart.png" alt="Shopping Cart" class="w-8 cursor-pointer">
+            </a>
+        </nav>
+
+        <!-- Spacing -->
+        <br>
+
+        <!-- Contact form container (centered card layout) -->
+        <div class="max-w-lg mx-auto bg-white p-8 rounded shadow-md text-black">
+            
+            <!-- Form heading -->
+            <h2 class="text-2xl font-bold mb-4 text-center">
+                Contact Us
+            </h2>
+
+            <!-- Contact form -->
+            <form action="/submit-form" method="POST" class="space-y-4">
+                
+                <!-- Name input field -->
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">
+                        Name
+                    </label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                        required>
+                </div>
+
+                <!-- Email input field -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">
+                        Email
+                    </label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                        required>
+                </div>
+
+                <!-- Message textarea -->
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">
+                        Message
+                    </label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="4" 
+                        class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                        required>
+                    </textarea>
+                </div>
+
+                <!-- Submit button -->
+                <button 
+                    type="submit" 
+                    class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
